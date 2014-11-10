@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+  background-image: url("/images/whowhat.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: center;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0px;
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%
+}
+
+.byline{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 1em;
+  color: #fff;
+  text-shadow: 0px 2px 2px #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.name{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(200, 200, 220, 0.8);
+  color: #eee;
+  text-shadow: 0px 1px 1px #333;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.sellout{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
