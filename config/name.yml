@@ -18,7 +18,6 @@ first:
     - receptionist
     - secessionist
     - specialist
-    - split
     - supremacist 
   splits:
     front:
@@ -49,7 +48,6 @@ last:
     - cumbersome
     - "Vegetable - Patch"
     - "Spinach - Patch"
-    - split
   splits:
     front:
       - amber
