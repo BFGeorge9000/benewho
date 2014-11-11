@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def show
     yaml = normalize_splits(Rails.application.config.name_data)
     @permutations = Rails.application.config.name_permutations
-    @amazon = Rails.application.config.amazon_links["images"][rand(Rails.application.config.amazon_links["images"].count)]
+    @amazon = Rails.application.config.amazon_links["text_and_images"][rand(Rails.application.config.amazon_links["text_and_images"].count)]
     @name = generate_name(yaml)
   end
 
