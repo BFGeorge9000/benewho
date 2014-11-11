@@ -10,9 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 
 body{
   background-image: url("/images/whowhat.jpg"); 
@@ -60,15 +61,8 @@ body{
   width: 100%;
 }
 
-.permutations{
-  font-family: 'Montserrat', sans-serif;
-  font-size: .5em;
-  text-align: center;
-}
-
 .sellout{
   position: absolute;
-  text-align: center;
   bottom: 0px;
   right: 0px;
 }

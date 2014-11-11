@@ -5,25 +5,15 @@
 
   <div class="sellout">
     Advertisement:
-    <div class="alignleft">  
-    <script type='text/javascript'>
-     amzn_assoc_ad_type = 'banner';
-     amzn_assoc_tracking_id = 'makofthi-20';
-     amzn_assoc_marketplace = 'amazon';
-     amzn_assoc_region = 'US';
-     amzn_assoc_placement = 'assoc_banner_placement_default';
-     amzn_assoc_linkid = 'HCRF37SY3DQKH6KA';
-     amzn_assoc_campaigns = 'big_events';
-     amzn_assoc_p = '9';
-     amzn_assoc_banner_type = 'setandforget';
-     amzn_assoc_width = '180';
-     amzn_assoc_height = '150';
-    </script>
-    <script src='https://z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1'></script>
+    <div>
+      <%= @amazon.html_safe %>
     </div>
   </div>
 
   <div class="byline">
     Made with all due respect, and the assistance of many <a href="https://www.youtube.com/watch?v=9GHPNKUMf70" target="_blank">panglings</a>.
+    <div class="permutations">
+      <%= "(This is one of #{@permutations} currently-possible <strong>BeneWHO CumberWHAT</strong> permutations.)".html_safe %>
+    </div>
   </div>
 </div>
