@@ -1,21 +1,9 @@
 class PagesController < ApplicationController
+  include Names
+
   def show
-    yaml = normalize_splits(Rails.application.config.name_data)
-    @permutations = Rails.application.config.name_permutations
-    @amazon = Rails.application.config.amazon_links["text_and_images"][rand(Rails.application.config.amazon_links["text_and_images"].count)]
-    @name = generate_name(yaml)
+    @permutations = Names.total_permutations
+    @amazon = Names.random_from(Names.amazon_links["text_and_images"])
+    @name = Names.generate_name(Names.normalized_name_data)
   end
-
-  private
-
-  def normalize_splits(data_set)
-    new_data_set = data_set.dup
-    data_set.keys.map do |key|
-      (data_set[key]["splits"]["front"].count + data_set[key]["splits"]["back"].count).times do
-        new_data_set[key]["completes"] << "split"      
-      end
-    end
-    new_data_set
-  end
-
 end
