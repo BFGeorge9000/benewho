@@ -1,6 +1,16 @@
 <div class="content">
   <div class="name">
-    <a href="javascript:window.location.href=window.location.href"><%= @name %></a>
+    <a href="javascript:window.location.href=window.location.href">
+      <%= @name %>
+      <div class="permutations">
+        <% if @name.views == 1 %>
+        You're the first person to see this permutation!
+        <% else %>
+        <%= "You had a #{(1.0000/@permutations)*100}% chance of seeing this permutation! It was first spotted on #{@name.first_seen}." %>
+        <% end %>
+        <%= "This is one of #{@permutations} possible permutations. #{Name.count} have been generated so far.  Click, tap, or reload to see another!" %>
+      </div>
+    </a>
   </div>
 
   <div class="sellout">
@@ -12,9 +22,6 @@
 
   <div class="byline">
     Made with all due respect, and the assistance of many <a href="https://www.youtube.com/watch?v=9GHPNKUMf70" target="_blank">panglings</a>.
-    <div class="permutations">
-      <%= "(This is one of #{@permutations} possible permutations. Reload to see another!)" %>
-    </div>
   </div>
 
   <div class="social">
