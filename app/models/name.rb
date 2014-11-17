@@ -9,6 +9,7 @@ class Name < ActiveRecord::Base
       create_from_name!(string)
     when 1
       names.first.increase_views!
+      names.first
     else
       raise "Unexpected Name Matches"
     end
@@ -29,7 +30,7 @@ class Name < ActiveRecord::Base
   end
 
   def first_seen
-    created_at
+    created_at.strftime("%b %d %Y @ %I:%M%p #{created_at.time_zone.name}")
   end
 
   def to_s
