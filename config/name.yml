@@ -5,7 +5,9 @@ first:
     - benefit
     - benefits
     - "Bendy - Straw"
+    - bodysnatch
     - "burnt sienna"
+    - buffalo
     - contradict
     - derelict
     - etiquette
@@ -27,6 +29,8 @@ first:
       - antenna
       - bean
       - bendy
+      - body
+      - bumble
       - fiddy
       - henna
       - queeny
@@ -46,6 +50,7 @@ first:
       - pricked
       - sicked
       - slicked
+      - snuff
       - strict
       - ticked
       - tricked 
@@ -68,13 +73,19 @@ last:
       - bumbler
       - bumper
       - bunker
+      - cabbage
       - concert
+      - crimple
+      - crimpy
       - crinkle
+      - crumble
+      - crumple
       - cucumber
       - cumbent
       - cumbered
       - cumbers
       - cummer
+      - custard
       - dumber
       - dumper
       - dunbar
@@ -117,6 +128,7 @@ last:
       - act
       - back
       - badge
+      - bath
       - birch
       - catch
       - gash
@@ -136,9 +148,11 @@ last:
       - scratch
       - smash
       - snatch
+      - snitch
       - stash
       - "'stache"
       - thatch
       - trash
+      - wank
       - wrap
       - wretch
