@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root 'pages#show'
 
+  get 'all' => 'pages#index'
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

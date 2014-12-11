@@ -1,0 +1,48 @@
+<div class="content">
+  <div class="name">
+    TOTAL: <%= @names.count %>
+    <table>
+      <tr>
+        <th>
+          FULL NAME
+        </th>
+        <th>
+          TIMES VIEWED
+        </th>
+        <th>
+          FIRST ONLY
+        </th>
+        <th>
+          LAST ONLY
+        </th>
+      </tr>
+      <% @names.each do |name| %>
+        <tr>
+          <td>
+            <%= name %>
+          </td>
+          <td>
+            <%= name.views %>
+          </td>
+          <td>
+            <%= name.first_name %>
+          </td>
+          <td>
+            <%= name.last_name %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <div class="sellout">
+    Advertisement:
+    <div>
+      <%= @amazon.html_safe %>
+    </div>
+  </div>
+
+  <div class="byline">
+    Made with all due respect, and the assistance of many <a href="https://www.youtube.com/watch?v=9GHPNKUMf70" target="_blank">panglings</a>.
+  </div>
+</div>

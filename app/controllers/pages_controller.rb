@@ -6,4 +6,9 @@ class PagesController < ApplicationController
     @amazon = Names.random_from(Names.amazon_links["text_and_images"])
     @name = Name.find_by_name!(Names.generate_name(Names.normalized_name_data))
   end
+
+  def index
+    @names = Name.all
+    @amazon = Names.random_from(Names.amazon_links["text_and_images"])
+  end
 end
